@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Third">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="900dp"
+                android:background="@drawable/payments_third_img">
+                <TextView
+                    android:id="@+id/resultDateThird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27 августа"
+                    android:textColor="#949494"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="60dp"
+                    android:textSize="11sp"/>
+                <RelativeLayout
+                    android:id="@+id/payments_third_receipt_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="80dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

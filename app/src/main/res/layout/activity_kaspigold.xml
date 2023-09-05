@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kaspigold"
+    android:background="#f2f2f2">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:paddingLeft="20dp">
+            <RelativeLayout
+                android:id="@+id/mybank_line_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_baseline_west_24"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мой банк"
+                android:layout_toEndOf="@+id/mybank_line_back"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="60dp"
+            android:background="#dfb97a">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Kaspi Gold *1797"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="65dp"
+                android:text="Доступно"
+                android:textColor="#fff"
+                android:textSize="14dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:id="@+id/mybank_kaspigold_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1564"
+                    android:textColor="#fff"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=",57 &#x20b8;"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:layout_toEndOf="@+id/mybank_kaspigold_textview"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kaspi_gold_img_pop">
+            <RelativeLayout
+                android:id="@+id/info_stats"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"/>
+            <RelativeLayout
+                android:id="@+id/replenish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="180dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

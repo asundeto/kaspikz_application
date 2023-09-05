@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transreceipt"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:background="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:background="@drawable/volny1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="-5dp">
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/last_logo_k"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="-7dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Перевод"
+                        android:textColor="#000"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="клиенту Kaspi"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="15dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/receipt_client_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ляззат Б."
+                            android:textColor="#000"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kaspi Gold"
+                            android:textColor="#000"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="#a3dc5b"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Перевод успешно совершен"
+                        android:textColor="#fff"
+                        android:textSize="19dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/act_trans_receipt_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="100"
+                        android:textColor="#fff"
+                        android:textSize="45sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/act_trans_receipt_text"
+                        android:text="&#x20b8;"
+                        android:textColor="#fff"
+                        android:textSize="45sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="№ квитанции"
+                            android:textColor="#949494"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="9713292775"
+                            android:textColor="#000"
+                            android:textSize="13sp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Дата и время"
+                            android:textColor="#949494"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/trans_receipt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="19.09.2022 11:50"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Коммисия"
+                            android:textColor="#949494"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0 &#x20b8;"
+                            android:textColor="#000"
+                            android:textSize="13sp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Отправитель"
+                            android:textColor="#949494"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="Сундетов А.А."
+                            android:textColor="#000"
+                            android:textSize="13sp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Откуда"
+                            android:textColor="#949494"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="Kaspi Gold"
+                            android:textColor="#000"
+                            android:textSize="13sp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@drawable/volny2"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_for_trans" />
+            <RelativeLayout
+                android:id="@+id/trans_receipt_close_btn"
+                android:layout_width="80dp"
+                android:layout_height="70dp"/>
+            <RelativeLayout
+                android:id="@+id/trans_receipt_to_again"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

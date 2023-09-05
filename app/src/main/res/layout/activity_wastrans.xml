@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wastrans"
+    android:background="#f2f2f2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:paddingLeft="20dp"
+            android:elevation="10dp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Переводы"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#a3dc5b"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ваш перевод совершен."
+                android:textColor="#fff"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:id="@+id/wastrans_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="157"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="7dp"/>
+            <TextView
+                android:layout_toEndOf="@+id/wastrans_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x20b8;"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:layout_marginTop="60dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/show_trans_receipt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="230dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:background="#fff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Показать квитанцию"
+                android:textSize="16sp"
+                android:textColor="#0288d1"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Квитанция сохранена в истории"
+                android:textSize="12sp"
+                android:textColor="#949494"
+                android:layout_marginTop="35dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_chevron_right_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="300dp"
+            android:background="#f2f2f2"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="301dp"
+            android:background="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сохранить в частые"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_toggle_off_24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="390dp"
+            android:textColor="#949494"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="415dp">
+
+            <include layout="@layout/horizontal_rassrochka" />
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/green_btn_to_transed"
+            android:layout_width="370dp"
+            android:layout_height="45dp"
+            android:background="#0288d1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="ВЕРНУТЬСЯ В ПЛАТЕЖИ"
+            android:textSize="20dp"
+            android:textColor="#fff">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Qr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:paddingLeft="20dp"
+            android:elevation="10dp"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/qr_qr_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/ic_baseline_close_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/qr_qr_close"
+                android:text="TRANSCARD. Город. О..."
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/qr_pict"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Покажите QR-код контролеру"
+            android:textColor="#949494"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:textSize="15sp">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"
+            android:layout_marginTop="290dp">
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Билет &#x2116;0001:10:8754"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310dp">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d6d6"
+            android:layout_marginTop="355dp">
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Автобус &#x2116;             (283AT01)"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp">
+        </TextView>
+        <TextView
+            android:id="@+id/resultCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/resultDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27 августа 2022"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginRight="7dp">
+            </TextView>
+            <TextView
+                android:id="@+id/resultTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:48"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/resultDate">
+            </TextView>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="71dp"
+            android:background="@drawable/qr_acivity_pict"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="465dp">
+        </ImageView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/qr_activity_btn"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="15dp"
+            android:background="#0288d1"
+            android:text="ВЕРНУТЬСЯ В ПЛАТЕЖИ"
+            android:textColor="#fff"
+            android:textSize="15sp"></androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

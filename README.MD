@@ -1,0 +1,1 @@
+In this project, I tried to develop an application similar to the popular banking application in Kazakhstan kaspi.kz. The development is focused on front-end development, that is, all the main operations take place on the front. The main feature of the application is scanning the qr code on the bus and issuing a receipt for payment, etc.

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kaspideimin">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Kaspi.kz"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KASPIDEIMIN">
+        <activity
+            android:name=".Transreceipt"
+            android:exported="false" />
+        <activity
+            android:name=".Wastrans"
+            android:exported="false" />
+        <activity
+            android:name=".Clienttrans"
+            android:exported="false" />
+        <activity
+            android:name=".Translations"
+            android:exported="false" />
+        <activity
+            android:name=".Stats"
+            android:exported="false" />
+        <activity
+            android:name=".Replenish"
+            android:exported="false" />
+        <activity
+            android:name=".Kaspigold"
+            android:exported="false" />
+        <activity
+            android:name=".Mybank"
+            android:exported="false" />
+        <activity
+            android:name=".Payments"
+            android:exported="false" />
+        <activity android:name=".Services" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity android:name=".Receipt" />
+        <activity android:name=".Messages" />
+        <activity android:name=".Qr" />
+        <activity android:name=".Green" />
+        <activity android:name=".Between" />
+        <activity android:name=".Scanner" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
